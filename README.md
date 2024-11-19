@@ -25,7 +25,7 @@
 
 
 ## Tecnologias Usadas
-Markdown, HTML, CSS, Git, GitHub, Vs Code. 
+Markdown, HTML, CSS, Git, GitHub, Vs Code.
 
 <div style="display: inline_block"><br>
   <img align="center" alt="Rafa-Js" height="50" width="60" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" >
