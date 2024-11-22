@@ -13,9 +13,16 @@
 
 
 ## Arthur Rebouças do Carmo
+<a href="https://github.com/artreboucas" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
+  <a href="https://www.linkedin.com/in/arthurrebou%C3%A7asdev/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+</div>
 
 
 ## Renner Hugo Oliveira Silva
+<div> 
+  <a href="https://github.com/Renner00" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
+  <a href="https://www.linkedin.com/in/rennerhg/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+</div>
 
 
 ## Samuel de Lima Ribeiro 
@@ -25,6 +32,7 @@
 </div>
 
 ## Laércio dos Santos Cordeiro
+
 
 
 ## Tecnologias Usadas
