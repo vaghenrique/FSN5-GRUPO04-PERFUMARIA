@@ -76,6 +76,43 @@ input, select, textarea {
 	appearance: none;
 }
 
+/* css carrosel */
+
+.carousel {
+    margin-top: 20px;
+}
+
+.text-white {
+    color: #fff !important;
+	
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta o alinhamento */
+    width: 40px; /* Diminuir o tamanho do botão */
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.3); /* Fundo semitransparente */
+    border-radius: 50%; /* Botões arredondados */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 20px; /* Ajustar largura do ícone */
+    height: 20px; /* Ajustar altura do ícone */
+    background-size: 100%; /* Ícone se adapta ao tamanho */
+}
+
+.carousel img {
+	border-radius: 15px; /* Arredonda as bordas */
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+    width: 100%; /* Ajusta a largura ao container */
+    height: 420px; /* Define uma altura fixa */
+    object-fit: cover; /* Faz o corte das bordas para manter a proporção */
+    border-radius: 8px; /* Opcional: arredonda as bordas */
+}
+
 /* Basic */
 
 	@-ms-viewport {

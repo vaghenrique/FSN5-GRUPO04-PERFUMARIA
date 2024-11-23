@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Cadastro - Casa dos Aromas</title>
+    <link rel="icon" href="images/logo.png" image>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/login_cadastro.css">
+</head>
+
+<body>
+    <!-- Barra de Navegação -->
+    <nav class="navbar">
+        <a href="index.html" class="logo"><strong>Casa</strong> <span>dos Aromas</span></a>
+        <a href="index.html" class="back-home-button">Voltar para Home</a>
+    </nav>
+
+    <!-- Conteúdo da Página -->
+    <div class="container">
+        <div class="form-box">
+            <!-- Formulário de Login -->
+            <form class="login-form">
+                <h2>Entrar</h2>
+                <input type="text" placeholder="Email" required>
+                <input type="password" placeholder="Senha" required>
+                <button type="submit" class="submit-btn">Entrar</button>
+                <p>Não tem conta? <a href="#" onclick="switchToRegister()">Cadastre-se</a></p>
+            </form>
+
+            <!-- Formulário de Cadastro -->
+            <form class="register-form hidden">
+                <h2>Cadastro</h2>
+                <input type="text" placeholder="Nome Completo" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Senha" required>
+                <input type="text" placeholder="Endereço" required>
+                <input type="tel" placeholder="Telefone" required>
+                <select required>
+                    <option value="">Selecione o gênero</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+                <button type="submit" class="submit-btn">Cadastrar</button>
+                <p>Já tem uma conta? <a href="#" onclick="switchToLogin()">Faça login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/js/login_cadastro.js"></script>
+</body>
+
+</html>
