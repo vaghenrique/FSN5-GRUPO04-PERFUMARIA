@@ -76,6 +76,12 @@ input, select, textarea {
 	appearance: none;
 }
 
+.logo-img{
+	width: 150px; /* tamanho */
+    height: auto; /* proporção seja mantida */
+	
+}
+
 /* css carrosel */
 
 .carousel {
