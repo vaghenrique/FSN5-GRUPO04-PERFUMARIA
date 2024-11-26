@@ -29,6 +29,11 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+footer{
+	text-align: center;
+
+}
+
 body {
 	line-height: 1;
 }
@@ -70,6 +75,63 @@ input, select, textarea {
 	-webkit-appearance: none;
 	-ms-appearance: none;
 	appearance: none;
+}
+
+.logo-img{
+	width: 150px; /* tamanho */
+    height: auto; /* proporção seja mantida */
+	
+}
+/*CSS LOGO AVON*/
+.section-title-avon {
+    font-size: 5rem; /* Ajuste conforme o tamanho do texto */
+    line-height: 1.5; /* Espaçamento entre linhas */
+    text-align: center; /* Centraliza o texto e a imagem */
+    margin: 100px 0; /* Espaçamento superior e inferior */
+}
+
+.logo-img-avon {
+    height:15em; /* Ajusta a altura para combinar com o texto */
+    vertical-align: middle; /* Alinha verticalmente com o texto */
+    margin-left: 10px; /* Espaçamento entre o texto e a logo */
+    display: inline-block; /* Garante que a logo fique ao lado do texto */
+}
+
+/* css carrosel */
+
+.carousel {
+    margin-top: 20px;
+}
+
+.text-white {
+    color: #fff !important;
+	
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta o alinhamento */
+    width: 40px; /* Diminuir o tamanho do botão */
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.3); /* Fundo semitransparente */
+    border-radius: 50%; /* Botões arredondados */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 20px; /* Ajustar largura do ícone */
+    height: 20px; /* Ajustar altura do ícone */
+    background-size: 100%; /* Ícone se adapta ao tamanho */
+}
+
+.carousel img {
+	border-radius: 15px; /* Arredonda as bordas */
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+    width: 100%; /* Ajusta a largura ao container */
+    height: 420px; /* Define uma altura fixa */
+    object-fit: cover; /* Faz o corte das bordas para manter a proporção */
+    border-radius: 8px; /* Opcional: arredonda as bordas */
 }
 
 /* Basic */
@@ -3118,7 +3180,7 @@ input, select, textarea {
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
 		cursor: default;
 		font-weight: 600;
-		height: 3.25em;
+		height: auto;
 		left: 0;
 		letter-spacing: 0.25em;
 		line-height: 3.25em;
@@ -3128,15 +3190,18 @@ input, select, textarea {
 		top: 0;
 		width: 100%;
 		z-index: 10000;
-	}
+		align-items: center;
+		justify-content: space-between
+	} 
+	
 
 		#header .logo {
 			border: 0;
 			display: inline-block;
-			font-size: 0.8em;
+			font-size: 1.2em;
 			height: inherit;
 			line-height: inherit;
-			padding: 0 1.5em;
+			padding: 0 2em;
 		}
 
 			#header .logo strong {
@@ -3193,7 +3258,9 @@ input, select, textarea {
 				}
 
 				#header nav a[href="#menu"] {
-					padding-right: 3.325em !important;
+					padding-right: 4.5em !important;
+					font-size: 1.2em; /* aumenta o tamanho da fonte*/
+					padding: 0 2em !important; /* Aumenta o espaçamento de lado */
 				}
 
 					#header nav a[href="#menu"]:before, #header nav a[href="#menu"]:after {
