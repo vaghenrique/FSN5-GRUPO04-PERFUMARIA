@@ -77,7 +77,7 @@ input, select, textarea {
 }
 
 .logo-img{
-	width: 150px; /* tamanho */
+	width: 100px; /* tamanho */
     height: auto; /* proporção seja mantida */
 	
 }
