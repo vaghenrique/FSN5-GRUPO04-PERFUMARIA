@@ -83,6 +83,21 @@ input, select, textarea {
 	
 }
 
+
+/*CSS LOGO AVON*/
+.section-title-avon {
+    font-size: 5rem; /* Ajuste conforme o tamanho do texto */
+    line-height: 1.5; /* Espaçamento entre linhas */
+    text-align: center; /* Centraliza o texto e a imagem */
+    margin: 100px 0; /* Espaçamento superior e inferior */
+}
+
+.logo-img-avon {
+    height:15em; /* Ajusta a altura para combinar com o texto */
+    vertical-align: middle; /* Alinha verticalmente com o texto */
+    margin-left: 10px; /* Espaçamento entre o texto e a logo */
+    display: inline-block; /* Garante que a logo fique ao lado do texto */
+}
 /* css carrosel */
 
 .carousel {
