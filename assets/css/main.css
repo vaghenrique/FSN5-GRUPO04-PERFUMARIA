@@ -77,6 +77,27 @@ input, select, textarea {
 	appearance: none;
 }
 
+.logo-img{
+	width: 150px; /* tamanho */
+    height: auto; /* proporção seja mantida */
+	
+}
+
+
+/*CSS LOGO AVON*/
+.section-title-avon {
+    font-size: 5rem; /* Ajuste conforme o tamanho do texto */
+    line-height: 1.5; /* Espaçamento entre linhas */
+    text-align: center; /* Centraliza o texto e a imagem */
+    margin: 100px 0; /* Espaçamento superior e inferior */
+}
+
+.logo-img-avon {
+    height:15em; /* Ajusta a altura para combinar com o texto */
+    vertical-align: middle; /* Alinha verticalmente com o texto */
+    margin-left: 10px; /* Espaçamento entre o texto e a logo */
+    display: inline-block; /* Garante que a logo fique ao lado do texto */
+}
 /* css carrosel */
 
 .carousel {
@@ -3189,7 +3210,7 @@ input, select, textarea {
 				-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-				background-color: #dc2222;
+				background-color: #ffffff;
 				color: #242943;
 				display: inline-block;
 				line-height: 1.65em;
