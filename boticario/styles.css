@@ -137,3 +137,106 @@ footer {
     color: #fff;
     margin-top: 20px;
 }
+
+
+
+#contact {
+    background: #f9f9f9; /* Fundo claro */
+    padding: 50px 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto 50px auto; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Estilização do formulário */
+#contact form {
+    margin-bottom: 30px;
+}
+
+#contact .fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#contact .field {
+    flex: 1 1 calc(50% - 10px); /* Campos lado a lado */
+    min-width: 300px;
+}
+
+#contact .field label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+#contact .field input,
+#contact .field textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    resize: none;
+}
+
+#contact .field textarea {
+    height: auto;
+}
+
+#contact .actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#contact .actions input {
+    background: #007bff; /* Botão azul */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#contact .actions input:hover {
+    background: #0056b3; /* Botão azul mais escuro ao passar o mouse */
+}
+
+#contact .actions input[type="reset"] {
+    background: #f44336; /* Botão vermelho */
+}
+
+#contact .actions input[type="reset"]:hover {
+    background: #c0392b; /* Vermelho mais escuro */
+}
+
+/* Estilização das informações de contato */
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.contact-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.contact-info p,
+.contact-info a {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
