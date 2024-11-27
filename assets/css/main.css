@@ -29,6 +29,11 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+img#icone{
+		position:absolute;
+		left: 300px;
+		top: 70px;
+	}
 footer{
 	text-align: center;
 
@@ -3210,7 +3215,7 @@ input, select, textarea {
 				-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-				background-color: #ffffff;
+				background-color: #e02222;
 				color: #242943;
 				display: inline-block;
 				line-height: 1.65em;
