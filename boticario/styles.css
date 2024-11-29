@@ -8,7 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-image: url('/boticario/img/Brinde-do-Boticario-agosto-2024.jpg'); /* Caminho para a imagem */
+    background-image: url('../boticario/img/Brinde-do-Boticario-agosto-2024.jpg'); /* Caminho para a imagem */
     background-size: cover; /* Faz com que a imagem ocupe toda a tela */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
     background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
