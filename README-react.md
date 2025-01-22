@@ -1,13 +1,14 @@
 # Getting Started with Create React App
 Certifique-se de ter o Node.js e o npm (ou Yarn) instalados no seu sistema
 
--npx create-react-app minha-aplicacao
--cd minha-aplicacao
 -npm start
 
 Se aparecer algum erro
 -npm install --save-dev web-vitals
 
+### `npm start`
+
+instale se necessario:
 npm install react-router-dom redux react-redux
 npm install react-router-dom redux react-redux styled-components
 
@@ -22,3 +23,5 @@ npm install
 
 npm audit fix
 npm audit fix --force
+
+### `npm start`
