@@ -1,100 +1,70 @@
-# Atlântico Avanti/ Residência em TIC 20/ Capacita Brasil/C-Jovem - Desenvolvimento Full Stack
+# Getting Started with Create React App
 
-# Projeto Integrador - #FSN5
-Este é um projeto integrador desenvolvido para criar um site de perfumaria que oferece uma ampla variedade de perfumes de marcas como Natura, Avon, O Boticário e opções importadas. O objetivo do projeto é apresentar as categorias de produtos de forma organizada, com um design atraente e navegabilidade intuitiva.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# 🎯 Objetivo do Projeto
-Criar um site responsivo e funcional que simule uma loja virtual de perfumaria, permitindo:
+## Available Scripts
 
-# 📂 Estrutura do Projeto
-O projeto é dividido em diretórios e arquivos organizados para facilitar o desenvolvimento e a manutenção. Abaixo está uma descrição de cada parte:
+In the project directory, you can run:
 
-assets/: Contém arquivos de suporte como estilos CSS e scripts JavaScript que ajudam a dar funcionalidade e design ao site.
+### `npm start`
 
-images/: Diretório para imagens utilizadas nas páginas, como banners, logotipos e fotos dos produtos.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-boticario/: Pasta dedicada às páginas relacionadas à marca O Boticário.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Arquivos principais:
+### `npm test`
 
-index.html: Página inicial do site que apresenta uma visão geral dos produtos e categorias disponíveis.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-equipe.html: Página com informações sobre a equipe responsável pelo desenvolvimento do projeto.
+### `npm run build`
 
-footer_sobre.html: Fragmento de HTML que contém informações sobre a empresa, utilizado como rodapé.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-login.html: Simulação de um sistema de login para clientes acessarem suas contas.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-natura-feminino.html e natura-masculino.html: Páginas exclusivas para perfumes da marca Natura, organizadas por gênero.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-perfumes_avon.html: Página com a lista de perfumes da Avon.
+### `npm run eject`
 
-perfumes_importados.html: Página geral que exibe todos os perfumes importados.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-LICENSE: Documento que especifica a licença do projeto.
-README.md: Arquivo de documentação que você está lendo
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-# 🚀 Funcionalidades
-Home Page: Apresentação geral dos produtos.
-Perfumes por Categorias:
-Perfumes femininos e masculinos de marcas como Natura, Avon, e O Boticário.
-Perfumes importados.
-Página da Equipe: Informações sobre os desenvolvedores do projeto.
-Login (em desenvolvimento): Simulação de autenticação.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-# Membros da Equipe - FSN5-GRUPO04-PERFUMARIA
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Leonardo Cândido Hilário
-<div> 
-  <a href="https://github.com/Leonardohilariogithub/" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
-  <a href="https://www.linkedin.com/in/leonardosoftwareqaengineer/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
-</div>
+## Learn More
 
-## Jose Jair Santos da Costa
-<div> 
-  <a href="https://github.com/jjosejair" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
-  <a href="https://www.linkedin.com/in/jair-santos-informatica/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
-</div>
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-## Arthur Rebouças do Carmo
-<a href="https://github.com/artreboucas" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
-  <a href="https://www.linkedin.com/in/arthurrebou%C3%A7asdev/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
-</div>
+### Code Splitting
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-## Renner Hugo Oliveira Silva
-<div> 
-  <a href="https://github.com/Renner00" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
-  <a href="https://www.linkedin.com/in/rennerhg/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
-</div>
+### Analyzing the Bundle Size
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-## Samuel de Lima Ribeiro 
-<div> 
-  <a href="https://github.com/sambrito-a" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
-  <a href="https://www.linkedin.com/in/samuelrbrito/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
-</div>
+### Making a Progressive Web App
 
-## Laércio dos Santos Cordeiro
-<div> 
-  <a href="https://github.com/cordeirolaercio/" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
-  <a href="https://www.linkedin.com/in/laercio-cordeiro30/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
-</div>
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
+### Advanced Configuration
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-## Tecnologias Usadas
-Markdown, HTML, CSS, Git, GitHub, Vs Code. 
+### Deployment
 
-<div style="display: flex; justify-content: center; align-items: center; gap: 20px; margin-top: 10px;">
-  <img alt="HTML5" height="60" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
-  <img alt="CSS3" height="60" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
-  <img alt="Bootstrap" height="60" src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white">
-  <img alt="GitHub" height="60" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
-  <img alt="Markdown" height="60" src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white">
-</div>
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
+### `npm run build` fails to minify
 
-
-
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
