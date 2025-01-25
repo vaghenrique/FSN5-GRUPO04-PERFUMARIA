@@ -1,46 +1,116 @@
-# Atlântico Avanti/ Residência em TIC 20/ Capacita Brasil/C-Jovem - Desenvolvimento Full Stack
+# Projeto Integrador - Desafio do Nível Intermediário
 
-# Projeto Integrador - #FSN5
-Este é um projeto integrador desenvolvido para criar um site de perfumaria que oferece uma ampla variedade de perfumes de marcas como Natura, Avon, O Boticário e opções importadas. O objetivo do projeto é apresentar as categorias de produtos de forma organizada, com um design atraente e navegabilidade intuitiva.
+Projeto Integrador - Desenvolvimento de um Site de Vendas Utilizando React
 
-# 🎯 Objetivo do Projeto
-Criar um site responsivo e funcional que simule uma loja virtual de perfumaria, permitindo:
+Introdução
+Vocês foram contratados para criar o front-end de um site de vendas moderno e dinâmico, utilizando as boas práticas de componentização, reutilização de código, gerenciamento de estados e roteamento no React. O objetivo é construir uma aplicação funcional e escalável que simule uma plataforma de e-commerce.
 
-# 📂 Estrutura do Projeto
-O projeto é dividido em diretórios e arquivos organizados para facilitar o desenvolvimento e a manutenção. Abaixo está uma descrição de cada parte:
+Requisitos do Projeto
+Estrutura e Layout Geral
 
-assets/: Contém arquivos de suporte como estilos CSS e scripts JavaScript que ajudam a dar funcionalidade e design ao site.
+Crie um layout responsivo e amigável, utilizando componentes reutilizáveis.
+O site deve conter pelo menos 3 páginas principais:
+Página Inicial: Exibe uma vitrine com os produtos disponíveis.
+Detalhes do Produto: Mostra informações detalhadas sobre um produto selecionado.
+Carrinho de Compras: Exibe os produtos adicionados ao carrinho com a possibilidade de alterar quantidades e finalizar a compra.
+Componentização e Reutilização de Código
 
-images/: Diretório para imagens utilizadas nas páginas, como banners, logotipos e fotos dos produtos.
+Utilize componentes reutilizáveis para partes comuns do site, como:
+Cabeçalho com navegação.
+Rodapé com informações do site.
+Cartões de produtos (exibidos na vitrine e no carrinho).
+Botões personalizados (ex.: "Adicionar ao Carrinho", "Comprar Agora"). 
+Gerenciamento de Estados
 
-boticario/: Pasta dedicada às páginas relacionadas à marca O Boticário.
+Gerencie os estados globais da aplicação utilizando:
+React Context API ou Redux para compartilhar dados como:
+Lista de produtos no carrinho.
+Quantidade total de itens.
+Preço total do carrinho.
+Permita as seguintes ações:
+Adicionar produtos ao carrinho.
+Remover produtos do carrinho.
+Alterar a quantidade de produtos no carrinho.
+Roteamento
 
-Arquivos principais:
+Implemente a navegação entre páginas usando o React Router:
 
-index.html: Página inicial do site que apresenta uma visão geral dos produtos e categorias disponíveis.
+Página Inicial (/): Mostra a lista de produtos disponíveis.
+Detalhes do Produto (/produto/:id): Mostra informações detalhadas de um produto selecionado.
+Carrinho (/carrinho): Lista os produtos adicionados ao carrinho com opções de gerenciamento.
+Funcionalidades Básicas
 
-equipe.html: Página com informações sobre a equipe responsável pelo desenvolvimento do projeto.
+Exibição de Produtos:
+Utilize uma lista de produtos mockados (simulados) para exibição. Cada produto deve ter:
+Nome.
+Imagem.
+Descrição curta.
+Preço.
+ID único.
+Detalhes do Produto:
+Ao clicar em um produto, o usuário deve ser redirecionado à página de detalhes, onde verá:
+Nome, imagem grande, descrição completa e preço.
+Botão para "Adicionar ao Carrinho".
+Carrinho de Compras:
+Exiba os produtos adicionados ao carrinho com:
+Nome, quantidade, preço unitário e subtotal.
+Botões para alterar a quantidade ou remover itens.
+Calcule e exiba o valor total do carrinho. 
+Estilização
 
-footer_sobre.html: Fragmento de HTML que contém informações sobre a empresa, utilizado como rodapé.
+Utilize CSS ou bibliotecas como Styled Components ou CSS Modules para estilizar a aplicação. Garanta que o design seja:
+Responsivo: Funciona bem em dispositivos móveis e desktops.
+Intuitivo: Fácil de usar e navegar.
+Diferenciais
+Filtros e Pesquisa: Implemente filtros para categorias ou uma barra de pesquisa para buscar produtos.
+Persistência de Dados: Use o localStorage para salvar os itens do carrinho, mesmo após o recarregamento da página.
+Animações: Adicione animações para transições de páginas ou interações do usuário (ex.: adicionar itens ao carrinho).
+Critérios de Avaliação
+Funcionalidade: O site atende aos requisitos básicos?
+Boas Práticas de Código:
+Uso correto de componentes reutilizáveis.
+Organização e clareza no código.
+Gerenciamento de Estado:
+Estados bem definidos e usados corretamente.
+Roteamento:
+Navegação entre páginas sem erros.
+Estilização e Design:
+Layout atrativo e responsivo.
+Inovação: Funcionalidades extras ou melhorias no design.
+Entrega
+Suba o projeto no GitHub e envie o link para a avaliação.
+Documente no README:
+Passos para rodar o projeto.
+Funcionalidades implementadas.
+Tecnologias utilizadas.
 
-login.html: Simulação de um sistema de login para clientes acessarem suas contas.
+# Certifique-se de ter o Node.js e o npm (ou Yarn) instalados no seu sistema npm start
 
-natura-feminino.html e natura-masculino.html: Páginas exclusivas para perfumes da marca Natura, organizadas por gênero.
+### `npm start`
 
-perfumes_avon.html: Página com a lista de perfumes da Avon.
+# Se aparecer algum erro ou aplicação não subir no navegador
 
-perfumes_importados.html: Página geral que exibe todos os perfumes importados.
+### ` npm install --save-dev web-vitals`
 
-LICENSE: Documento que especifica a licença do projeto.
-README.md: Arquivo de documentação que você está lendo
+# Para adicionar rotas à sua aplicação React, você pode usar a biblioteca react-router-dom. 
+# Esta biblioteca permite que você crie rotas para diferentes componentes e navegue entre eles.
 
-# 🚀 Funcionalidades
-Home Page: Apresentação geral dos produtos.
-Perfumes por Categorias:
-Perfumes femininos e masculinos de marcas como Natura, Avon, e O Boticário.
-Perfumes importados.
-Página da Equipe: Informações sobre os desenvolvedores do projeto.
-Login (em desenvolvimento): Simulação de autenticação.
+### `npm install react-router-dom `
+ou
+### `npm install react-router-dom redux react-redux`
+### `npm install react-router-dom redux react-redux styled-components`
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+# Se necessario use comandos a seguir:
+### `npm run build`
+
+### `npm install redux react-redux @reduxjs/toolkit` 
+
+### `npm start`
 
 # Membros da Equipe - FSN5-GRUPO04-PERFUMARIA
 
@@ -82,19 +152,14 @@ Login (em desenvolvimento): Simulação de autenticação.
   <a href="https://www.linkedin.com/in/laercio-cordeiro30/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
 </div>
 
-
-
 ## Tecnologias Usadas
 Markdown, HTML, CSS, Git, GitHub, Vs Code. 
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 20px; margin-top: 10px;">
   <img alt="HTML5" height="60" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
   <img alt="CSS3" height="60" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
-  <img alt="Bootstrap" height="60" src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white">
+  <img alt="Js" height="60" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+  <img alt="React" height="60" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
   <img alt="GitHub" height="60" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
   <img alt="Markdown" height="60" src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white">
 </div>
-
-
-
-
