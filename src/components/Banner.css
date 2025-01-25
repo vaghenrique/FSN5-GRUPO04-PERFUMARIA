@@ -112,7 +112,7 @@
 .products {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: ;
   margin: 40px auto;
 }
 
