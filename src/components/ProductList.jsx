@@ -2,11 +2,12 @@ import React from 'react';
 import './ProductList.css';
 
 const products = [
-  { id: 1, name: 'Perfumes Importados ', brand: 'Marca Italiana/ ID único 10', price: 500, image: require('../assets/imageA.jpg') },
-  //{ id: 2, name: 'Perfumes Nacionais', brand: 'Marca Brasileira', price: 100 },
-  { id: 3, name: 'Perfumes Boticario', brand: 'Marca Brasileira/ ID único 12', price: 300, image: require('../assets/imageB.jpg')  },
-  { id: 4, name: 'Perfumes Avon', brand: 'Marca Brasileira/ ID único 15', price: 500 },
-  { id: 5, name: 'Perfumes Avon', brand: 'Marca Brasileira/ ID único 12', price: 600 },
+  { id: 1, name: 'Perfumes Importados ', brand: 'Marca Italiana', price: 500, },
+  { id: 3, name: 'Perfumes Boticario', brand: 'Marca Brasileira', price: 100, },
+  { id: 4, name: 'Perfumes Avon', brand: 'Marca Brasileira', price: 150 },
+  { id: 5, name: 'Perfumes Natura', brand: 'Marca Brasileira', price: 200 },
+  { id: 6, name: 'Perfumes Hinode', brand: 'Marca Brasileira', price: 250 },
+  { id: 7, name: 'Perfumes Jequiti', brand: 'Marca Brasileira', price: 300 },
 ];
 
 const ProductList = ({ setSelectedProduct }) => {

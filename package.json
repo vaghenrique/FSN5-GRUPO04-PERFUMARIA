@@ -10,8 +10,7 @@
     "react-dom": "^19.0.0",
     "react-redux": "^9.2.0",
     "react-scripts": "5.0.1",
-    "redux": "^5.0.1",
-    "web-vitals": "^4.2.4"
+    "redux": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -36,5 +35,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "web-vitals": "^4.2.4"
   }
 }
