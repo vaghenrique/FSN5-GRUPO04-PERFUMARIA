@@ -1,31 +1,26 @@
-import React, { useState } from 'react';
-import Navbar from './components/Navbar';
-import Banner from './components/Banner';
-import ProductList from './components/ProductList';
-import ProductDetails from './components/ProductDetails';
-import Cart from './components/Cart';
-import { CartProvider } from './CartContext';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import CategoryPage from "./pages/CategoryPage";
+import ProductDetails from "./pages/ProductDetails";
+import Cart from "./pages/Cart";
+import { CartProvider } from "./contexts/CartContext";
 
-function App() {
-  const [selectedProduct, setSelectedProduct] = useState(null);
-
+const App = () => {
   return (
     <CartProvider>
-      <div>
+      <Router>
         <Navbar />
-        <Banner />
-        {selectedProduct ? (
-          <ProductDetails product={selectedProduct} />
-        ) : (
-          <ProductList setSelectedProduct={setSelectedProduct} />
-        )}
-        <Cart />
-      </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/categoria/:category" element={<CategoryPage />} />
+          <Route path="/produto/:id" element={<ProductDetails />} />
+          <Route path="/carrinho" element={<Cart />} />
+        </Routes>
+      </Router>
     </CartProvider>
   );
-}
+};
 
 export default App;
-
-

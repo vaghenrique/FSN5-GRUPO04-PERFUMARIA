@@ -1,19 +1,143 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  flex-wrap: wrap; /* Permite que os itens se reorganizem em telas menores */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 40px; /* Espaço entre os itens */
+  margin-right: 1200px;
+  padding: 0;
+  flex-wrap: wrap; /* Permite que os itens se quebrem em múltiplas linhas */
+}
+
+.navbar li {
+  display: flex;
+  align-items: center; /* Mantém o alinhamento dos itens */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: gray;
+  font-size: 18px;
+}
+
+.navbar h1 {
+  font-family: 'Krona One', sans-serif;
+  margin-left: 100px; /* Espaço à esquerda do título */
+  font-size: 24px; /* Tamanho dinâmico */
+  margin-right: 10px; /* Espaço à direita do título */
+}
+
+.navbar li {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos específicos para o botão do carrinho */
+.cart-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none; /* Remove a borda azul do foco */
+  position: relative; /* Para o contador de itens */
+}
+
+.cart-button img {
+  width: 24px;  /* Ajuste do tamanho para ícone */
+  height: 24px; /* Ajuste do tamanho para ícone */
+}
+
+.cart-button:hover {
+  background: none; /* Sem alteração de cor ao passar o mouse */
+  border: none; /* Garantir que não tenha borda */
+  outline: none; /* Garantir que não tenha outline ao passar o mouse */
+}
+
+.cart-quantity {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 5px;
+  font-size: 12px;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 15px; /* Reduz o padding em telas menores */
   }
 
   .navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+    gap: 20px; /* Ajuste no espaço entre os itens */
+  }
+
+  .navbar h1 {
+    margin-left: 50px; /* Menos espaço à esquerda */
+    font-size: 22px; /* Ajuste do tamanho do título */
   }
 
   .navbar a {
-    text-decoration: none;
-    color: gray;
-    font-size: 18px;
+    font-size: 16px; /* Tamanho menor para os links */
   }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Alinha itens verticalmente em telas pequenas */
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    gap: 10px; /* Reduz o espaço entre os itens */
+    margin-top: 10px; /* Adiciona espaço abaixo do título */
+    margin-right: 0; /* Remove o excesso de margem direita */
+  }
+
+  .navbar h1 {
+    margin-left: 0; /* Remove o espaçamento lateral */
+    font-size: 20px; /* Ajuste no tamanho do título */
+  }
+
+  .navbar a {
+    font-size: 16px; /* Tamanho menor para links */
+  }
+
+  .cart-button img {
+    width: 20px; /* Ícone do carrinho um pouco menor */
+    height: 20px;
+  }
+
+  .cart-quantity {
+    font-size: 10px; /* Tamanho do contador de itens menor */
+    padding: 1px 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar h1 {
+    font-size: 18px; /* Tamanho menor para telas muito pequenas */
+  }
+
+  .navbar a {
+    font-size: 14px; /* Links ainda menores */
+  }
+
+  .cart-button img {
+    width: 18px; /* Ícone menor */
+    height: 18px;
+  }
+
+  .cart-quantity {
+    font-size: 8px; /* Menor ainda para o contador de itens */
+    padding: 2px 4px;
+  }
+}

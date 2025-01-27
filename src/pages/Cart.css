@@ -1,0 +1,47 @@
+.cart {
+  padding: 2rem;
+}
+
+.cart h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+}
+
+.cart-item h3 {
+  font-size: 1.2rem;
+}
+
+.cart-item input {
+  width: 50px;
+  text-align: center;
+  margin-left: 1rem;
+}
+
+.cart-item button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart-item button:hover {
+  background-color: #c0392b;
+}
+
+.cart h3 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  text-align: right;
+}
