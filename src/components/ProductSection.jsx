@@ -1,14 +1,21 @@
 import React, { useContext } from "react";
 import { CartContext } from "../contexts/CartContext";
+import Invictus from "../assets/Invictus.jpeg"
+import ArmaniCode from "../assets/Armani Code.png"
+import BossBottled from "../assets/Boss Bottled.jpeg"
+import YEaudeParfum from "../assets/Y Eau de Parfum.jpeg"
+import MusamanWhite from "../assets/importado2.jpg"
 
 const ProductSection = ({ title, category }) => {
   const { addToCart } = useContext(CartContext);
 
   const products = [
     // Simulação de dados de produtos
-    { id: 1, name: "Perfume Masculino 1", price: 200, category: "masculinos" },
-    { id: 2, name: "Perfume Masculino 2", price: 250, category: "masculinos" },
-    { id: 3, name: "Perfume Feminino 1", price: 300, category: "femininos" },
+    { id: 11, name: "Invictus", price: 200, category: "importados", image: Invictus,},
+    { id: 12, name: "Armani Code", price: 250, category: "importados",  image: ArmaniCode},
+    { id: 13, name: "Boss Bottled", price: 250, category: "importados",  image: BossBottled},
+    { id: 14, name: "Y Eau de Parfum", price: 200, category: "importados", image: YEaudeParfum,},
+    { id: 15, name: "Musaman White Intense", price: 200, category: "importados", image: MusamanWhite,},
   ].filter((product) => product.category === category);
 
   return (
@@ -17,6 +24,7 @@ const ProductSection = ({ title, category }) => {
       <div className="product-grid">
         {products.map((product) => (
           <div key={product.id} className="product-card">
+            <img src={product.image} alt={product.name} className="product-image" />
             <h3>{product.name}</h3>
             <p>R${product.price}</p>
             <button onClick={() => addToCart(product)}>
@@ -28,5 +36,6 @@ const ProductSection = ({ title, category }) => {
     </div>
   );
 };
+
 
 export default ProductSection;
