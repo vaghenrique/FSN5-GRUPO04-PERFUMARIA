@@ -11,7 +11,7 @@ const App = () => {
   return (
     <CartProvider>
       <Router>
-        <Navbar />
+        <Navbar /> {/* Navbar renderizada */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/categoria/:category" element={<CategoryPage />} />

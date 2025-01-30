@@ -2,36 +2,31 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import masculino1 from "../assets/masculino1.jpg";
 import feminino1 from "../assets/feminino1.jpg";
-import importado2 from "../assets/importado2.jpg";
 import categoriamasculinos from "../assets/categoria-masculinos.jpg";
 import categoriafemininos from "../assets/categoria-femininos.jpg";
 import categoriaimportados from "../assets/categoria-importados.jpg";
-import Footer from "../components/Footer"; // Importando o componente Footer
+import MusamanWhite from "../assets/importado2.jpg";
+import Footer from "../components/Footer";
 import "./Home.css";
 
-// Perfumes mais vendidos (definidos manualmente)
+// Perfumes mais vendidos
 const bestSellers = [
   {
     id: 1,
     name: "Essencial Ato",
     image: masculino1,
-    shortDescription:
-      "Natura, deixe sua marca com uma fragrância inesquecível.",
     price: 200,
   },
   {
-    id: 3,
+    id: 6,
     name: "Lily Eau de Parfum",
     image: feminino1,
-    shortDescription: "O Boticário, a delicadeza de um jardim em flor. 🌸",
     price: 250,
   },
   {
-    id: 5,
+    id: 15,
     name: "Musamam White Intense",
-    image: importado2,
-    shortDescription:
-      "Lattafa Perfumes, É um perfume oriental floral compartilhável 🐍, lançado em 2023",
+    image: MusamanWhite,
     price: 500,
   },
 ];
@@ -49,7 +44,7 @@ const Home = () => {
             <div
               key={product.id}
               className="product-card"
-              onClick={() => navigate(`/produto/${product.id}`)} // Redireciona para a página individual
+              onClick={() => navigate(`/produto/${product.id}`)}
             >
               <img
                 src={product.image}
@@ -57,13 +52,20 @@ const Home = () => {
                 className="product-image"
               />
               <h3>{product.name}</h3>
-              <p>{product.shortDescription}</p>
-              <p>R${product.price}</p>
+              <p className="price">R${product.price}</p>
+              <button
+                className="buy-button"
+                onClick={(e) => {
+                  e.stopPropagation(); // Impede que o clique no botão navegue para a página do produto
+                  navigate(`/produto/${product.id}`); // Navega para a página de descrição do produto
+                }}
+              >
+                QUERO O MEU
+              </button>
             </div>
           ))}
         </div>
       </section>
-
       {/* Categorias de perfumes */}
       <section className="categories">
         <h2>Categorias</h2>
@@ -98,7 +100,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Footer importado */}
+      {}
       <Footer />
     </div>
   );

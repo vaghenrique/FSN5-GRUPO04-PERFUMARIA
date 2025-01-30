@@ -37,8 +37,6 @@ const Footer = () => {
             <button type="submit">Enviar</button>
           </form>
         </div>
-
-        
       </div>
     </footer>
   );

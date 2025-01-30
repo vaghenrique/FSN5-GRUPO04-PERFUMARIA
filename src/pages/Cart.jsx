@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { CartContext } from "../contexts/CartContext";
+import Footer from "../components/Footer";
 import "./Cart.css";
 
 const Cart = () => {
@@ -24,36 +25,39 @@ const Cart = () => {
   };
 
   return (
-    <section className="cart">
-      <h2>Carrinho de Compras</h2>
-      {cart.length === 0 ? (
-        <p>Seu carrinho está vazio</p>
-      ) : (
-        cart.map((item) => (
-          <div key={item.id} className="cart-item">
-            <h3>{item.name}</h3>
-            <p>Preço: R${item.price}</p>
-            <p>
-              Quantidade:
-              <input
-                type="number"
-                min="1"
-                value={item.quantity}
-                onChange={(e) => handleQuantityChange(e, item.id)}
-              />
-            </p>
-            <p>Subtotal: R${item.price * item.quantity}</p>
-            <button
-              onClick={() => setCart(cart.filter((i) => i.id !== item.id))}
-            >
-              Remover
-            </button>
-          </div>
-        ))
-      )}
-      <h3>Total: R${totalPrice}</h3>
-      <button className="checkout-button">Finalizar Compra</button>
-    </section>
+    <div>
+      <section className="cart">
+        <h2>Carrinho de Compras</h2>
+        {cart.length === 0 ? (
+          <p>Seu carrinho está vazio</p>
+        ) : (
+          cart.map((item) => (
+            <div key={item.id} className="cart-item">
+              <h3>{item.name}</h3>
+              <p>Preço: R${item.price}</p>
+              <p>
+                Quantidade:
+                <input
+                  type="number"
+                  min="1"
+                  value={item.quantity}
+                  onChange={(e) => handleQuantityChange(e, item.id)}
+                />
+              </p>
+              <p>Subtotal: R${item.price * item.quantity}</p>
+              <button
+                onClick={() => setCart(cart.filter((i) => i.id !== item.id))}
+              >
+                Remover
+              </button>
+            </div>
+          ))
+        )}
+        <h3>Total: R${totalPrice}</h3>
+        <button className="checkout-button">Finalizar Compra</button>
+      </section>
+      <Footer /> {}
+    </div>
   );
 };
 
