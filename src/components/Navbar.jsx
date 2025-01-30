@@ -25,11 +25,18 @@ const Navbar = () => {
 
       <ul>
         <li>
-          <a href="#home">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="#produtos">Produtos</a>
+          <Link to="/categoria/masculinos">Perfumes Masculinos</Link>
         </li>
+        <li>
+          <Link to="/categoria/femininos">Perfumes Femininos</Link>
+        </li>
+        <li>
+          <Link to="/categoria/importados">Perfumes Importados</Link>
+        </li>
+        
       </ul>
 
       <div className="cart-container">
