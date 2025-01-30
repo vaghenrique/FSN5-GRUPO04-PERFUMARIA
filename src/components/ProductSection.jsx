@@ -164,12 +164,7 @@ const ProductSection = ({ title, category }) => {
       <div className="product-grid">
         {products.map((product) => (
           <div key={product.id} className="product-card">
-            <img
-              src={product.image}
-              alt={product.name}
-              className="product-image"
-              onClick={() => handleProductClick(product.id)}
-            />
+            <img src={product.image} alt={product.name} className="product-image" />
             <h3>{product.name}</h3>
             <p>R${product.price}</p>
             <button onClick={() => addToCart(product)}>
