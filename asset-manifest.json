@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/FSN2-GRUPO04-PERFUMARIA/static/css/main.f0991a63.css",
-    "main.js": "/FSN2-GRUPO04-PERFUMARIA/static/js/main.6169b808.js",
-    "static/media/categoria-importados.jpg": "/FSN2-GRUPO04-PERFUMARIA/static/media/categoria-importados.c5a3ea9ec49920490565.jpg",
-    "static/media/importado2.jpg": "/FSN2-GRUPO04-PERFUMARIA/static/media/importado2.07ba8a7cea6dac55b201.jpg",
-    "static/media/importado1.jpg": "/FSN2-GRUPO04-PERFUMARIA/static/media/importado1.b82be3ecc3a0bfe21f38.jpg",
-    "static/media/feminino1.jpg": "/FSN2-GRUPO04-PERFUMARIA/static/media/feminino1.8e4f64de35d2ee038b7f.jpg",
-    "static/media/feminino2.jpg": "/FSN2-GRUPO04-PERFUMARIA/static/media/feminino2.211bc5eafc8567855301.jpg",
-    "static/media/masculino2.jpg": "/FSN2-GRUPO04-PERFUMARIA/static/media/masculino2.b89af45b93590f79f813.jpg",
-    "static/media/categoria-femininos.jpg": "/FSN2-GRUPO04-PERFUMARIA/static/media/categoria-femininos.c4bbcda3485f11fab69b.jpg",
-    "static/media/masculino1.jpg": "/FSN2-GRUPO04-PERFUMARIA/static/media/masculino1.d6850e921c7af0e28a29.jpg",
-    "static/media/categoria-masculinos.jpg": "/FSN2-GRUPO04-PERFUMARIA/static/media/categoria-masculinos.d057f89543ce61267870.jpg",
-    "index.html": "/FSN2-GRUPO04-PERFUMARIA/index.html",
-    "main.f0991a63.css.map": "/FSN2-GRUPO04-PERFUMARIA/static/css/main.f0991a63.css.map",
-    "main.6169b808.js.map": "/FSN2-GRUPO04-PERFUMARIA/static/js/main.6169b808.js.map"
+    "main.css": "/FSN5-GRUPO04-PERFUMARIA/static/css/main.f0991a63.css",
+    "main.js": "/FSN5-GRUPO04-PERFUMARIA/static/js/main.d70b38e3.js",
+    "static/media/categoria-importados.jpg": "/FSN5-GRUPO04-PERFUMARIA/static/media/categoria-importados.c5a3ea9ec49920490565.jpg",
+    "static/media/importado2.jpg": "/FSN5-GRUPO04-PERFUMARIA/static/media/importado2.07ba8a7cea6dac55b201.jpg",
+    "static/media/importado1.jpg": "/FSN5-GRUPO04-PERFUMARIA/static/media/importado1.b82be3ecc3a0bfe21f38.jpg",
+    "static/media/feminino1.jpg": "/FSN5-GRUPO04-PERFUMARIA/static/media/feminino1.8e4f64de35d2ee038b7f.jpg",
+    "static/media/feminino2.jpg": "/FSN5-GRUPO04-PERFUMARIA/static/media/feminino2.211bc5eafc8567855301.jpg",
+    "static/media/masculino2.jpg": "/FSN5-GRUPO04-PERFUMARIA/static/media/masculino2.b89af45b93590f79f813.jpg",
+    "static/media/categoria-femininos.jpg": "/FSN5-GRUPO04-PERFUMARIA/static/media/categoria-femininos.c4bbcda3485f11fab69b.jpg",
+    "static/media/masculino1.jpg": "/FSN5-GRUPO04-PERFUMARIA/static/media/masculino1.d6850e921c7af0e28a29.jpg",
+    "static/media/categoria-masculinos.jpg": "/FSN5-GRUPO04-PERFUMARIA/static/media/categoria-masculinos.d057f89543ce61267870.jpg",
+    "index.html": "/FSN5-GRUPO04-PERFUMARIA/index.html",
+    "main.f0991a63.css.map": "/FSN5-GRUPO04-PERFUMARIA/static/css/main.f0991a63.css.map",
+    "main.d70b38e3.js.map": "/FSN5-GRUPO04-PERFUMARIA/static/js/main.d70b38e3.js.map"
   },
   "entrypoints": [
     "static/css/main.f0991a63.css",
-    "static/js/main.6169b808.js"
+    "static/js/main.d70b38e3.js"
   ]
 }
