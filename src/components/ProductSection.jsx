@@ -44,7 +44,11 @@ const ProductSection = ({ title, category }) => {
       <div className="product-grid">
         {products.map((product) => (
           <div key={product.id} className="product-card">
-            <img src={product.image} alt={product.name} className="product-image" />
+          <img
+            src={product.image}
+            alt={product.name}
+            style={{ width: "330px", height: "500px", objectFit: "cover", borderRadius: "10px" }}
+          />
             <h3>{product.name}</h3>
             <p>R${product.price}</p>
             <button onClick={() => addToCart(product)}>
