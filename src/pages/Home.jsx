@@ -66,7 +66,8 @@ const Home = () => {
           ))}
         </div>
       </section>
-      {/* Categorias de perfumes */}
+
+      {/* Seção de categorias de perfumes */}
       <section className="categories">
         <h2>Categorias</h2>
         <div className="category-grid">
@@ -100,7 +101,7 @@ const Home = () => {
         </div>
       </section>
 
-      {}
+      {/* Footer */}
       <Footer />
     </div>
   );

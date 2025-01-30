@@ -1,4 +1,4 @@
-
+/* Estilos gerais da Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -7,8 +7,10 @@
   background-color: #3c5f93;
   position: relative;
   flex-wrap: wrap;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
+/* Container do logo */
 .logo-container {
   display: flex;
   align-items: center;
@@ -18,9 +20,14 @@
 .logo {
   width: 100px;
   height: auto;
+  transition: transform 0.2s; /* Efeito de hover */
 }
 
+.logo:hover {
+  transform: scale(1.05); /* Aumenta levemente ao passar o mouse */
+}
 
+/* Botão do menu hambúrguer */
 .hamburger {
   display: none;
   background: none;
@@ -28,9 +35,14 @@
   font-size: 24px;
   color: white;
   cursor: pointer;
+  transition: color 0.2s;
 }
 
+.hamburger:hover {
+  color: #ffcc00; /* Cor ao passar o mouse */
+}
 
+/* Links de navegação */
 .nav-links {
   list-style: none;
   display: flex;
@@ -43,9 +55,16 @@
   text-decoration: none;
   color: white;
   font-size: 20px;
+  font-weight: 500; /* Texto um pouco mais forte */
+  transition: color 0.2s, transform 0.2s;
 }
 
+.nav-links a:hover {
+  color: #ffcc00; /* Cor ao passar o mouse */
+  transform: translateY(-2px); /* Efeito de levantar */
+}
 
+/* Ícone do carrinho */
 .cart-container {
   position: relative;
 }
@@ -55,6 +74,11 @@
   border: none;
   cursor: pointer;
   position: relative;
+  transition: transform 0.2s;
+}
+
+.cart-button:hover {
+  transform: scale(1.1); /* Aumenta levemente ao passar o mouse */
 }
 
 .cart-button img {
@@ -74,10 +98,10 @@
   font-size: 12px;
 }
 
-
+/* Estilos para telas menores */
 @media (max-width: 768px) {
   .hamburger {
-    display: block; 
+    display: block; /* Mostra o botão hambúrguer */
   }
 
   .nav-links {
@@ -89,10 +113,13 @@
     background-color: #3c5f93;
     width: 200px;
     padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    animation: slideDown 0.3s ease-out; /* Animação ao abrir */
   }
 
   .nav-links.open {
-    display: flex; 
+    display: flex; /* Mostra o menu quando aberto */
   }
 
   .navbar {
@@ -107,6 +134,19 @@
   }
 }
 
+/* Animação para o menu hambúrguer */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilos para telas muito pequenas */
 @media (max-width: 480px) {
   .navbar a {
     font-size: 16px;

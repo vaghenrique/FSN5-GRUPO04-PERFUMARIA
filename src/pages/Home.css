@@ -1,11 +1,13 @@
-
+/* Estilos gerais */
 .home-container {
   padding: 20px;
   font-family: 'Poppins', sans-serif;
   text-align: center;
+  background-color: #f4f4f4; /* Cor de fundo harmoniosa */
+  min-height: 100vh; /* Garante que o fundo cubra toda a altura da tela */
 }
 
-
+/* Seção de perfumes mais vendidos */
 .best-sellers {
   margin-bottom: 40px;
 }
@@ -17,19 +19,18 @@
   font-weight: 600;
 }
 
-
 .best-sellers .product-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   justify-content: center;
   margin: 0 auto;
-  max-width: 1200px; 
+  max-width: 1200px;
 }
 
 .best-sellers .product-card {
-  background-color: #3c5f93; 
-  border: 1px solid #2a4568; 
+  background-color: #3c5f93;
+  border: 1px solid #2a4568;
   border-radius: 12px;
   padding: 20px;
   text-align: center;
@@ -39,7 +40,7 @@
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
-  height: 500px; 
+  height: 500px;
 }
 
 .best-sellers .product-card:hover {
@@ -49,26 +50,26 @@
 
 .best-sellers .product-card img {
   width: 100%;
-  height: 350px; 
-  object-fit: cover; 
-  border-radius: 8px 8px 0 0; 
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
 }
 
 .best-sellers .product-card h3 {
   font-size: 1.5rem;
   margin: 15px 0;
-  color: #ffffff; 
+  color: #ffffff;
   font-weight: 500;
 }
 
 .best-sellers .product-card .price {
   font-size: 1.2rem;
-  color: #ffffff; 
+  color: #ffffff;
   font-weight: 600;
 }
 
 .best-sellers .product-card .buy-button {
-  background-color: #3c5f93; 
+  background-color: #48f12d;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -79,27 +80,10 @@
 }
 
 .best-sellers .product-card .buy-button:hover {
-  background-color: #48f12d; 
+  background-color: #3c5f93;
 }
 
-
-@media screen and (max-width: 1024px) {
-  .best-sellers .product-grid {
-    grid-template-columns: repeat(2, 1fr); 
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .best-sellers .product-grid {
-    grid-template-columns: 1fr; 
-  }
-
-  .best-sellers .product-card img {
-    height: 250px; 
-  }
-}
-
-
+/* Seção de categorias */
 .categories {
   margin-bottom: 40px;
 }
@@ -156,22 +140,21 @@
   font-size: 1.5rem;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   margin-bottom: 10px;
-  
 }
 
-
+/* Responsividade */
 @media screen and (max-width: 1024px) {
   .best-sellers .product-grid {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (max-width: 768px) {
   .best-sellers .product-grid {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
   }
 
   .best-sellers .product-card img {
-    height: 250px; 
+    height: 250px;
   }
 }

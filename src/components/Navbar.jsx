@@ -23,12 +23,12 @@ const Navbar = () => {
         </h1>
       </div>
 
-      {}
+      {/* Botão do menu hambúrguer */}
       <button className="hamburger" onClick={toggleMenu}>
         ☰
       </button>
 
-      {}
+      {/* Links de navegação */}
       <ul className={`nav-links ${isMenuOpen ? "open" : ""}`}>
         <li>
           <Link to="/" className="nav-link" onClick={toggleMenu}>
@@ -64,7 +64,7 @@ const Navbar = () => {
         </li>
       </ul>
 
-      {}
+      {/* Ícone do carrinho */}
       <div className="cart-container">
         <Link to="/carrinho">
           <button className="cart-button">

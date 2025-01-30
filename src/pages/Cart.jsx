@@ -4,24 +4,12 @@ import Footer from "../components/Footer";
 import "./Cart.css";
 
 const Cart = () => {
-  const { cart, setCart, addToCart } = useContext(CartContext);
+  const { cart, removeFromCart, updateQuantity, getTotalPrice } =
+    useContext(CartContext);
 
-  const totalPrice = cart.reduce(
-    (acc, item) => acc + item.price * item.quantity,
-    0
-  );
-
-  const updateQuantity = (id, quantity) => {
-    setCart((prevCart) =>
-      prevCart.map((item) =>
-        item.id === id ? { ...item, quantity: Math.max(1, quantity) } : item
-      )
-    );
-  };
-
-  const handleQuantityChange = (e, itemId) => {
+  const handleQuantityChange = (e, productId) => {
     const quantity = parseInt(e.target.value, 10);
-    updateQuantity(itemId, quantity);
+    updateQuantity(productId, quantity); 
   };
 
   return (
@@ -29,34 +17,37 @@ const Cart = () => {
       <section className="cart">
         <h2>Carrinho de Compras</h2>
         {cart.length === 0 ? (
-          <p>Seu carrinho está vazio</p>
+          <p className="empty-cart-message">Seu carrinho está vazio</p>
         ) : (
           cart.map((item) => (
             <div key={item.id} className="cart-item">
-              <h3>{item.name}</h3>
-              <p>Preço: R${item.price}</p>
-              <p>
-                Quantidade:
-                <input
-                  type="number"
-                  min="1"
-                  value={item.quantity}
-                  onChange={(e) => handleQuantityChange(e, item.id)}
-                />
-              </p>
-              <p>Subtotal: R${item.price * item.quantity}</p>
-              <button
-                onClick={() => setCart(cart.filter((i) => i.id !== item.id))}
-              >
-                Remover
-              </button>
+              <img
+                src={item.image}
+                alt={item.name}
+                className="cart-item-image"
+              />
+              <div className="cart-item-details">
+                <h3>{item.name}</h3>
+                <p>Preço: R${item.price}</p>
+                <p>
+                  Quantidade:
+                  <input
+                    type="number"
+                    min="1"
+                    value={item.quantity}
+                    onChange={(e) => handleQuantityChange(e, item.id)}
+                  />
+                </p>
+                <p>Subtotal: R${item.price * item.quantity}</p>
+                <button onClick={() => removeFromCart(item.id)}>Remover</button>
+              </div>
             </div>
           ))
         )}
-        <h3>Total: R${totalPrice}</h3>
+        <h3>Total: R${getTotalPrice()}</h3>
         <button className="checkout-button">Finalizar Compra</button>
       </section>
-      <Footer /> {}
+      <Footer />
     </div>
   );
 };
