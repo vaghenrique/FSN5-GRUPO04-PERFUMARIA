@@ -24,7 +24,6 @@ import million from "../assets/1million.jpg";
 import naturahomem from "../assets/naturahomem.jpg";
 import beyondthemoon from "../assets/beyondthemoon.jpg";
 
-
 // Lista de produtos com imagens importadas
 const products = [
   {

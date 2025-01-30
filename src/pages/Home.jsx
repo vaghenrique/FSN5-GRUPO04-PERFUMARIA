@@ -6,10 +6,10 @@ import categoriamasculinos from "../assets/categoria-masculinos.jpg";
 import categoriafemininos from "../assets/categoria-femininos.jpg";
 import categoriaimportados from "../assets/categoria-importados.jpg";
 import MusamanWhite from "../assets/importado2.jpg";
-import Footer from "../components/Footer"; 
+import Footer from "../components/Footer";
 import "./Home.css";
 
-// Perfumes mais vendidos 
+// Perfumes mais vendidos
 const bestSellers = [
   {
     id: 1,
@@ -65,8 +65,6 @@ const Home = () => {
             </div>
           ))}
         </div>
-
-        
       </section>
       {/* Categorias de perfumes */}
       <section className="categories">

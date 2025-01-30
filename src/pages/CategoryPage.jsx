@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import ProductSection from "../components/ProductSection";
-import Footer from "../components/Footer"; 
+import Footer from "../components/Footer";
 
 const CategoryPage = () => {
   const { category } = useParams();

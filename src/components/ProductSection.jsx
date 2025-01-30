@@ -152,7 +152,6 @@ const ProductSection = ({ title, category }) => {
       category: "importados",
       image: million,
     },
-    
   ].filter((product) => product.category === category);
 
   const handleProductClick = (productId) => {
