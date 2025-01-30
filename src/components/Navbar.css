@@ -1,62 +1,66 @@
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: white;
-  flex-wrap: wrap; /* Permite que os itens se reorganizem em telas menores */
+  padding: 10px 20px;
+  background-color: #3c5f93;
+  position: relative;
+  flex-wrap: wrap;
 }
 
-.navbar ul {
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+
+.nav-links {
   list-style: none;
   display: flex;
-  gap: 40px; /* Espaço entre os itens */
-  margin-right: 1200px;
+  gap: 40px;
   padding: 0;
-  flex-wrap: wrap; /* Permite que os itens se quebrem em múltiplas linhas */
+  margin: 0;
 }
 
-.navbar li {
-  display: flex;
-  align-items: center; /* Mantém o alinhamento dos itens */
-}
-
-.navbar a {
+.nav-links a {
   text-decoration: none;
-  color: gray;
-  font-size: 18px;
+  color: white;
+  font-size: 20px;
 }
 
-.navbar h1 {
-  font-family: 'Krona One', sans-serif;
-  margin-left: 100px; /* Espaço à esquerda do título */
-  font-size: 24px; /* Tamanho dinâmico */
-  margin-right: 10px; /* Espaço à direita do título */
+
+.cart-container {
+  position: relative;
 }
 
-.navbar li {
-  font-family: 'Poppins', sans-serif;
-}
-
-/* Estilos específicos para o botão do carrinho */
 .cart-button {
   background: none;
   border: none;
-  padding: 0;
   cursor: pointer;
-  outline: none; /* Remove a borda azul do foco */
-  position: relative; /* Para o contador de itens */
+  position: relative;
 }
 
 .cart-button img {
-  width: 24px;  /* Ajuste do tamanho para ícone */
-  height: 24px; /* Ajuste do tamanho para ícone */
-}
-
-.cart-button:hover {
-  background: none; /* Sem alteração de cor ao passar o mouse */
-  border: none; /* Garantir que não tenha borda */
-  outline: none; /* Garantir que não tenha outline ao passar o mouse */
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
 }
 
 .cart-quantity {
@@ -70,74 +74,51 @@
   font-size: 12px;
 }
 
-/* Responsividade */
-@media (max-width: 1200px) {
-  .navbar {
-    padding: 15px; /* Reduz o padding em telas menores */
-  }
-
-  .navbar ul {
-    gap: 20px; /* Ajuste no espaço entre os itens */
-  }
-
-  .navbar h1 {
-    margin-left: 50px; /* Menos espaço à esquerda */
-    font-size: 22px; /* Ajuste do tamanho do título */
-  }
-
-  .navbar a {
-    font-size: 16px; /* Tamanho menor para os links */
-  }
-}
 
 @media (max-width: 768px) {
+  .hamburger {
+    display: block; 
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #3c5f93;
+    width: 200px;
+    padding: 10px;
+  }
+
+  .nav-links.open {
+    display: flex; 
+  }
+
   .navbar {
-    flex-direction: column; /* Alinha itens verticalmente em telas pequenas */
+    flex-direction: column;
     align-items: flex-start;
   }
 
-  .navbar ul {
-    gap: 10px; /* Reduz o espaço entre os itens */
-    margin-top: 10px; /* Adiciona espaço abaixo do título */
-    margin-right: 0; /* Remove o excesso de margem direita */
-  }
-
-  .navbar h1 {
-    margin-left: 0; /* Remove o espaçamento lateral */
-    font-size: 20px; /* Ajuste no tamanho do título */
-  }
-
-  .navbar a {
-    font-size: 16px; /* Tamanho menor para links */
-  }
-
-  .cart-button img {
-    width: 20px; /* Ícone do carrinho um pouco menor */
-    height: 20px;
-  }
-
-  .cart-quantity {
-    font-size: 10px; /* Tamanho do contador de itens menor */
-    padding: 1px 4px;
+  .cart-container {
+    position: absolute;
+    right: 20px;
+    top: 20px;
   }
 }
 
 @media (max-width: 480px) {
-  .navbar h1 {
-    font-size: 18px; /* Tamanho menor para telas muito pequenas */
-  }
-
   .navbar a {
-    font-size: 14px; /* Links ainda menores */
+    font-size: 16px;
   }
 
   .cart-button img {
-    width: 18px; /* Ícone menor */
+    width: 18px;
     height: 18px;
   }
 
   .cart-quantity {
-    font-size: 8px; /* Menor ainda para o contador de itens */
+    font-size: 8px;
     padding: 2px 4px;
   }
 }

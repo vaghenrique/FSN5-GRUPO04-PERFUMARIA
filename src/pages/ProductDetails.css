@@ -3,64 +3,114 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #f9f9f9; 
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  max-width: 800px; 
+  margin: 2rem auto; 
 }
 
 .product-image-large {
-  max-width: 300px;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-  border: 1px solid #ddd;
+  width: 100%;
+  max-width: 400px; 
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .product-details h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: #333;
+  font-family: 'Krona One', sans-serif;
+  text-align: center;
 }
 
 .product-details p {
   margin: 0.5rem 0;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  color: #555; 
   text-align: center;
+  line-height: 1.6; 
+}
+
+.product-details .price {
+  font-size: 1.8rem;
+  color: #3c5f93; 
+  font-weight: 600;
+  margin: 1rem 0;
 }
 
 .product-details button {
-  background-color: #1abc9c;
+  background-color: #3c5f93; 
   color: white;
   border: none;
-  padding: 0.8rem 1.2rem;
+  padding: 0.8rem 1.5rem;
   font-size: 1rem;
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin: 0.5rem;
 }
 
 .product-details button:hover {
-  background-color: #16a085;
-}
-.product-details {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
+  background-color: #2a4568; 
 }
 
-.product-image-large {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  margin-bottom: 20px;
+.product-details .back-button {
+  background-color: #e0e0e0; 
+  color: #333;
 }
 
-button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
+.product-details .back-button:hover {
+  background-color: #b0b0b0; 
 }
 
-button:hover {
-  background-color: #0056b3;
+
+@media (max-width: 768px) {
+  .product-details {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .product-details h2 {
+    font-size: 2rem;
+  }
+
+  .product-details p {
+    font-size: 1rem;
+  }
+
+  .product-details .price {
+    font-size: 1.5rem;
+  }
+
+  .product-details button {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-details {
+    padding: 1rem;
+  }
+
+  .product-details h2 {
+    font-size: 1.8rem;
+  }
+
+  .product-details p {
+    font-size: 0.9rem;
+  }
+
+  .product-details .price {
+    font-size: 1.3rem;
+  }
+
+  .product-details button {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+  }
 }
