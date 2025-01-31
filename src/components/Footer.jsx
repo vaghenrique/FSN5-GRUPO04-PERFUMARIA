@@ -10,23 +10,23 @@ const Footer = () => {
           <div className="social-icons">
             <a href="#" target="_blank" rel="noopener noreferrer">
               Facebook
-              <br />
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer">
               Instagram
-              <br />
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer">
               Twitter
-              <br />
             </a>
           </div>
         </div>
 
         <div className="footer-address">
-          <h4>Endereço:</h4>
-          <h4>Rua dos Finados, 151 - Bairro Vila Velha</h4>
-          <p>Fortaleza, Ceara - 4002-8922</p>
+          <h4>Endereço</h4>
+          <p>Rua dos Finados, 151 - Bairro Vila Velha</p>
+          <p>Fortaleza, Ceará - 4002-8922</p>
+          <h4>Telefone</h4>
+          <p>(85) 1234-5678</p>
+          <p>(85) 9876-5432</p>
         </div>
 
         <div className="footer-form">
